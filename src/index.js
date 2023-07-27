@@ -4,11 +4,11 @@ import Notiflix from 'notiflix';
 import SimpleLightbox from "simplelightbox";
 import "simplelightbox/dist/simple-lightbox.min.css"
 
-gallery = document.querySelector('.gallery')
+
 btnEl = document.querySelector('.load-more')
 formEl = document.querySelector('.search-form')
 
-
+gallery = document.querySelector('.gallery')
 const lightbox = new SimpleLightbox('.gallery a', {captionsData:'alt' , captionDelay:'250'});
 
 btnEl.hidden = true
