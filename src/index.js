@@ -4,9 +4,9 @@ import Notiflix from 'notiflix';
 import SimpleLightbox from "simplelightbox";
 import "simplelightbox/dist/simple-lightbox.min.css"
 
-gallery = document.querySelector('.gallery')
-btnEl = document.querySelector('.load-more')
-formEl = document.querySelector('.search-form')
+const gallery = document.querySelector('.gallery')
+const btnEl = document.querySelector('.load-more')
+const formEl = document.querySelector('.search-form')
 
 const lightbox = new SimpleLightbox('.gallery a', { captionsData: 'alt', captionDelay: '250' });
 
@@ -49,7 +49,7 @@ function onLoad(evt) {
                     .querySelector(".gallery")
                     .firstElementChild.getBoundingClientRect();
 
-              window.scrollBy({
+               window.scrollBy({
                     top: cardHeight * 4,
                     behavior: "smooth",
                   });
